@@ -39,7 +39,7 @@ console.log(risultato);
 // STABILISCO CHI HA VINTO 
 
 
-if (risultato == "even" && even_Odd == "even") {
+if (risultato == even_Odd) {
     document.getElementById('stampa').innerHTML = "You win!";
 } else {
     document.getElementById('stampa').innerHTML = "You lost :( ";
