@@ -6,11 +6,11 @@ var user_word = prompt('Tell me a word');
 
 
 // 2) definisco la lunghezza della parola 
-var leng = user_word.length;
+// var leng = user_word.length;
 
 // 3) trovo metà lunghezza (arrotondando per difetto)
-var half_leng = Math.floor(leng / 2);
-console.log(half_leng);
+// var half_leng = Math.floor((user_word.length)/ 2);
+
 
 /**
  * 
@@ -20,12 +20,13 @@ console.log(half_leng);
 
 
 function isPalindromo(parola_utente) {
-
+    var leng = parola_utente.length;
+    var half_leng = Math.floor(leng / 2);
     var palindromo = false;
     for (var i = 0; i < half_leng; i++) {
 
-        var lett_left = user_word.charAt(i);
-        var lett_right = user_word.charAt(leng - (i + 1));
+        var lett_left = parola_utente.charAt(i);
+        var lett_right = parola_utente.charAt(leng - (i + 1));
         if (lett_left == lett_right) {
             palindromo = true;
         }
