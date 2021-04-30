@@ -2,7 +2,7 @@
 // Chiedere all’utente di inserire una parola Creare una funzione per capire se la parola inserita è palindroma
 
 // 1) Chiedo all'utende una parola 
-var user_word = prompt('Tell me a word');
+// var user_word = prompt('Tell me a word');
 
 
 // 2) definisco la lunghezza della parola 
@@ -18,7 +18,7 @@ var user_word = prompt('Tell me a word');
  * @returns La funzione restituisce un valore vero o falso, a seconda che parola_utente sia palidroma o meno. 
  */
 
-
+/*
 function isPalindromo(parola_utente) {
     var leng = parola_utente.length;
     var half_leng = Math.floor(leng / 2);
@@ -42,4 +42,17 @@ if (risultato) {
     document.getElementById('stampa_palindromi').innerHTML = "The word you entered <strong> IS NOT </strong> palindrome";
 }
 
+*/
 
+// ALTERNATIVA FABIO
+
+function isPalindrome(word) {
+    var reverseWord = word.split('').reverse().join('');
+    if (reverseWord == word) {
+        return true;
+    }
+
+}
+
+
+console.log(isPalindrome('OVATTAVO'));
