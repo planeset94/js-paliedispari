@@ -40,4 +40,16 @@ if (risultato == even_Odd) {
 
 
 
+var calcAge = function () {
+    /*il nome della variabile diventa una funzione. 
+    Questa funzione è valida solo per il codice che viene dopo di essa. 
+    Non puù essere invocata prima di essere creata.*/
+}
+
+
+// Funzione anonima in event Listener || Non può essere usata da sola
+document.getElementById('button').addEventListener('click', function () {
+    // esegui codice 
+});
+
 
