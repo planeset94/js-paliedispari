@@ -5,10 +5,10 @@ var user_Number = parseInt(prompt('Enter a number between 1 and 5'));
 console.log(user_Number);
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 
-function random_Function() {
-    return parseInt(Math.random() * 6);
+function random_Function(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
 }
-var computer_Number = random_Function();
+var computer_Number = random_Function(0, 5);
 console.log("numero computer " + computer_Number);
 
 // Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
